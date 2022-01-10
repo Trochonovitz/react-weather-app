@@ -1,12 +1,8 @@
 import React from 'react';
-import {
-  fireEvent,
-  getByText,
-  render,
-  screen,
-  waitFor,
-} from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import WeatherApp from './WeatherApp';
+import WeatherCard from 'components/WeatherCard/WeatherCard';
 
 describe('Weather App', () => {
   it('Renders the component', () => {
@@ -26,8 +22,9 @@ describe('Weather App', () => {
     const input = screen.getByPlaceholderText('Search for a city');
     fireEvent.change(input, { target: { value: 'Paris' } });
     fireEvent.click(button);
+    const card = render(<WeatherCard />);
     await waitFor(() => {
-      expect(getByText('Paris')).toBeInTheDocument();
+      expect(card.getByText('Paris')).toBeInTheDocument();
     });
   });
 });
