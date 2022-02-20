@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import axios from 'axios';
 
 export const useWeather = () => {
-  const BASE_URL = 'http://api.weatherapi.com/v1';
+  const BASE_URL = 'https://api.weatherapi.com/v1';
 
   const fetchWeather = useCallback(async (city) => {
     try {
