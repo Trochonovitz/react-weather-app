@@ -1,8 +1,6 @@
 # Website Link: https://trochonovitz.github.io/react-weather-app/
 
-## Simple website application which allows you to check actual weather in couple of different capitals.
-
-### Main libraries used to build: Styled Components, Downshift, Axios.
+## Simple single web application which allows you to check actual weather in couple of different capitals. I used Downshift library to create a dropdown menu and axios for handling requests.
 
 ## Available Scripts
 
