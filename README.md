@@ -1,4 +1,4 @@
-# Website Link: https://trochonovitz.github.io/react-weather-app/
+# Website: https://trochonovitz.github.io/react-weather-app/
 
 ## Simple single web application which allows you to check actual weather in couple of different capitals. I used Downshift library to create a dropdown menu and axios for handling requests.
 
